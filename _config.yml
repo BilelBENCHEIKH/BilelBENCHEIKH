@@ -1,3 +1,6 @@
 title: "Bilel BEN CHEIKH"
-theme: jekll-theme-minimal
+logo: img/nny.jpg
+description: "Portfolio Consultant BI & Data"
+show_downloads: true
+theme: jekyll-theme-minimal
 lang: fr
