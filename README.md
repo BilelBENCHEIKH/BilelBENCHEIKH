@@ -7,11 +7,15 @@ Spécialisé dans l'audit, la refonte d'applications et l'optimisation de perfor
 
 **Outils BI & Visualisation:**
  SSIS, SSAS, SSRS, Microsoft Power BI, QlikView, Qliksense, Qlik Nprinting, Power Query, DAX, Set analysis.
+ 
 **Bases de données:**
  SQL Server, MySQL, Oracle, IBM BD2, PostgreSQL.
+ 
 **Modélisation:**
  Multidimensionnel (OLAP), Relationnel (OLTP), Merise, UML.
+ 
 **Gestion de projet:**
  MS Project, Redmine, Trello, Jira, Confluence. 
+ 
 **Méthodologies:**
  Scrum, Agile, Waterfall.
