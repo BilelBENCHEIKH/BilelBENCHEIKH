@@ -5,17 +5,13 @@ Bilel BEN CHEIKH consultant Business Intelligence & Data avec plus de 10 ans d'e
 Spécialisé dans l'audit, la refonte d'applications et l'optimisation de performances, j'apporte des solutions BI sur mesure qui combinent architecture robuste et tableaux de bord décisionnels à fort impact.
 ## 🛠️ Stack technique
 
-**Outils BI & Visualisation**
-SSIS, SSAS, SSRS, Microsoft Power BI, QlikView, Qliksense, Qlik Nprinting, Power Query, DAX, Set analysis.
-
-**Bases de données**
-SQL Server, MySQL, Oracle, IBM BD2, PostgreSQL.
-
-**Modélisation**
-Multidimensionnel (OLAP), Relationnel (OLTP), Merise, UML.
-
-**Gestion de projet**
-MS Project, Redmine, Trello, Jira, Confluence. 
-
-**Méthodologies**
-Scrum, Agile, Waterfall.
+**Outils BI & Visualisation:**
+ SSIS, SSAS, SSRS, Microsoft Power BI, QlikView, Qliksense, Qlik Nprinting, Power Query, DAX, Set analysis.
+**Bases de données:**
+ SQL Server, MySQL, Oracle, IBM BD2, PostgreSQL.
+**Modélisation:**
+ Multidimensionnel (OLAP), Relationnel (OLTP), Merise, UML.
+**Gestion de projet:**
+ MS Project, Redmine, Trello, Jira, Confluence. 
+**Méthodologies:**
+ Scrum, Agile, Waterfall.
