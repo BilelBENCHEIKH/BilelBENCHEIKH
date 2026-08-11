@@ -23,10 +23,15 @@ Spécialisé dans l'audit, la refonte d'applications et l'optimisation de perfor
  
 ## 💼 Expérience 
 **Consultant Business Intelligence — VENTURIS**
+
 Depuis septembre 2023
+
 Secteur : Crédit management — recouvrement amiable et judiciaire de créances impayées
+
 •	Animer les ateliers de cadrage avec les métiers et traduire les besoins en spécifications techniques et cahiers des charges.
+
 •	Concevoir et développer des solutions décisionnelles sous Power BI et Qlik Sense (modélisation de données, DAX, Set Analysis) à partir de sources hétérogènes (SQL Server, Oracle, API, fichiers plats).
+
 •	Préparer et fiabiliser les données (nettoyage, formatage) via Power Query et Qlik Load Script.
 •	Générer et automatiser la diffusion de rapports (PixelPerfect, Excel, HTML) auprès des utilisateurs via Qlik NPrinting.
 •	Sécuriser l'accès aux données via RLS (Power BI) et Section Access (Qlik Sense).
