@@ -46,7 +46,10 @@ nav a:hover, nav a.active {
 
 main {
   max-width: 900px;
-  margin: 2rem auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto; /* Pousse le bloc vers la droite */
+  margin-right: 10%;  /* Espace par rapport au bord droit de l'écran */
   padding: 0 1rem;
 }
 
