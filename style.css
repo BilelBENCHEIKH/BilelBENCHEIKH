@@ -137,25 +137,25 @@ h2 {
 .profile-container {
   display: flex; /* Active flexbox pour aligner les éléments sur la même ligne */
   align-items: flex-start; /* Aligne le haut du texte avec le haut de l'image pour éviter les vides */
-  justify-content: space-between; /* Espace le texte et l'image au maximum */
-  gap: 3rem; /* Espacement équilibré entre le texte et l'image */
+  justify-content: flex-start; /* Aligne les éléments à partir de la gauche */
+  gap: 3rem; /* Espacement équilibré entre la photo et le texte */
   margin-bottom: 1.5rem; /* Réduit la marge basse pour faire remonter la suite de la page */
   width: 100%; /* S'assure que le conteneur occupe toute la largeur disponible */
 }
 
-.profile-text {
-  flex: 1; /* Le texte prend tout l'espace disponible à gauche */
-}
-
 .profile-img {
-  width: 300px; /* Taille ajustée pour ne pas repousser la suite du texte vers le bas */
+  width: 300px; /* Taille ajustée */
   height: 300px;
   border-radius: 50%; /* Rend l'image ronde */
   object-fit: cover; /* S'assure que l'image est bien recadrée */
   border: 3px solid #0284c7; /* Bordure bleue */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
   flex-shrink: 0; /* Empêche l'image de rétrécir */
-  margin-left: auto; /* Pousse l'image au maximum vers le bord droit */
+  margin-right: 0; /* Supprime le décalage forcé à droite */
+}
+
+.profile-text {
+  flex: 1; /* Le texte prend tout l'espace disponible à droite de l'image */
 }
 
 /* Ajustement des titres pour resserrer les espaces verticaux */
@@ -167,7 +167,8 @@ h1, h2 {
 /* Adaptation pour les écrans mobiles et tablettes */
 @media (max-width: 768px) {
   .profile-container {
-    flex-direction: column-reverse; /* Empile les éléments et remet l'image en haut sur mobile */
+    flex-direction: column; /* Empile les éléments (l'image reste au-dessus) sur mobile */
+    align-items: center;
     text-align: center;
     gap: 1.5rem;
   }
@@ -175,6 +176,5 @@ h1, h2 {
   .profile-img {
     width: 220px; /* Taille adaptée pour mobile */
     height: 220px;
-    margin-left: 0;
   }
 }
