@@ -1,4 +1,4 @@
-* 
+
 /* Layout pour le conteneur du profil */
 .profile-container {
   display: flex; /* Active flexbox pour aligner les éléments sur la même ligne */
@@ -7,7 +7,7 @@
   gap: 2rem; /* Crée un espace de 2rem entre le texte et l'image */
   margin-bottom: 2rem;
 }
-
+* 
 .profile-text {
   flex: 1; /* Le texte prend tout l'espace disponible */
 }
