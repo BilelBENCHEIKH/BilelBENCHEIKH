@@ -45,11 +45,11 @@ nav a:hover, nav a.active {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: auto; /* Pousse le bloc vers la droite */
-  margin-right: 10%;  /* Espace par rapport au bord droit de l'écran */
+  margin-left: 5%; /* Pousse le bloc vers la droite */
+  margin-right: auto;  /* Espace par rapport au bord droit de l'écran */
   padding: 0 1rem;
 }
 
