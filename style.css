@@ -137,7 +137,7 @@ h2 {
 }
 
 /* Adaptation pour les écrans mobiles */
-@media (max-width: 5000px) {
+@media (max-width: 1000px) {
   .profile-container {
     flex-direction: column-reverse; /* Empile les éléments et remet l'image en haut sur mobile */
     text-align: center;
