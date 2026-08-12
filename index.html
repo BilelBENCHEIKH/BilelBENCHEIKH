@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Bilel BEN CHEIKH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Bilel BEN CHEIKH</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link active" onclick="showSection('about')">Qui je suis</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('experience')">Expériences & Projets</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ONGLET 1: QUI JE SUIS -->
+    <section id="about" class="tab-content active">
+      <h1>Consultant Business Intelligence & Data</h1>
+      <p>
+        Plus de 10 ans d'expérience dans le déploiement d'architectures décisionnelles, 
+        la modélisation de données et le développement de tableaux de bord stratégiques.
+      </p>
+      <h2>Compétences clés</h2>
+      <ul class="skills-list">
+        <li><strong>BI & Visualization :</strong> Qlik Sense, QlikView, Qlik NPrinting, Power BI</li>
+        <li><strong>Data & ETL :</strong> SQL, Modélisation décisionnelle, Extraction & Transformation</li>
+        <li><strong>Environnements :</strong> Cloud, On-Premise</li>
+      </ul>
+    </section>
+
+    <!-- ONGLET 2: EXPÉRIENCES ET PROJETS -->
+    <section id="experience" class="tab-content">
+      <h1>Expériences & Projets</h1>
+
+      <div class="card">
+        <h3>Consultant BI Senior</h3>
+        <span class="date">ESN — France</span>
+        <p>Accompagnement de grands comptes dans la mise en place de solutions BI sur mesure.</p>
+        <ul>
+          <li>Conception et optimisation de modèles de données complexes.</li>
+          <li>Développement d'applications Qlik Sense et Power BI pour le suivi de la performance.</li>
+          <li>Migration et refonte d'architectures décisionnelles.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Projets décisionnels clés</h3>
+        <ul>
+          <li><strong>Tableaux de bord RH & Finance :</strong> Automatisation du reporting mensuel.</li>
+          <li><strong>Optimisation ETL :</strong> Réduction des temps de chargement des flux de données.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ONGLET 3: CONTACT -->
+    <section id="contact" class="tab-content">
+      <h1>Contact</h1>
+      <p>N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
+      <div class="contact-info">
+        <p><strong>Email :</strong> <a href="mailto:votre.email@example.com">votre.email@example.com</a></p>
+        <p><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/votre-profil" target="_blank">linkedin.com/in/votre-profil</a></p>
+        <p><strong>GitHub :</strong> <a href="https://github.com/votre-utilisateur" target="_blank">github.com/votre-utilisateur</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function showSection(sectionId) {
+      // Masquer toutes les sections
+      document.querySelectorAll('.tab-content').forEach(section => {
+        section.classList.remove('active');
+      });
+      // Désactiver tous les liens
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      // Afficher la section sélectionnée et activer le lien
+      document.getElementById(sectionId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
