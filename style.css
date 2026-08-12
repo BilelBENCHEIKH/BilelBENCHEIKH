@@ -4,7 +4,7 @@
   display: flex; /* Active flexbox pour aligner les éléments sur la même ligne */
   align-items: center; /* Aligne verticalement le texte et l'image au centre */
   justify-content: space-between; /* Espace le texte et l'image */
-  gap: 2rem; /* Crée un espace de 2rem entre le texte et l'image */
+  gap: 5rem; /* Crée un espace de 2rem entre le texte et l'image */
   margin-bottom: 2rem;
 }
 * 
@@ -13,8 +13,8 @@
 }
 
 .profile-img {
-  width: 150px; /* Ajustez la taille selon vos préférences */
-  height: 150px;
+  width: 300px; /* Ajustez la taille selon vos préférences */
+  height: 300px;
   border-radius: 50%; /* Rend l'image ronde */
   object-fit: cover; /* S'assure que l'image est bien recadrée */
   border: 3px solid #0284c7; /* Optionnel: ajoute une bordure bleue */
