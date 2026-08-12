@@ -112,3 +112,34 @@ h2 {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+/* Layout pour le conteneur du profil */
+.profile-container {
+  display: flex; /* Active flexbox pour aligner les éléments sur la même ligne */
+  align-items: center; /* Aligne verticalement le texte et l'image au centre */
+  justify-content: space-between; /* Espace le texte et l'image */
+  gap: 2rem; /* Crée un espace de 2rem entre le texte et l'image */
+  margin-bottom: 2rem;
+}
+
+.profile-text {
+  flex: 1; /* Le texte prend tout l'espace disponible */
+}
+
+.profile-img {
+  width: 150px; /* Ajustez la taille selon vos préférences */
+  height: 150px;
+  border-radius: 50%; /* Rend l'image ronde */
+  object-fit: cover; /* S'assure que l'image est bien recadrée */
+  border: 3px solid #0284c7; /* Optionnel: ajoute une bordure bleue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel: ajoute une ombre */
+  flex-shrink: 0; /* Empêche l'image de rétrécir */
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column-reverse; /* Empile les éléments et remet l'image en haut sur mobile */
+    text-align: center;
+  }
+}
