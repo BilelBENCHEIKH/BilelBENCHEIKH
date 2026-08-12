@@ -117,29 +117,38 @@ h2 {
 .profile-container {
   display: flex; /* Active flexbox pour aligner les éléments sur la même ligne */
   align-items: center; /* Aligne verticalement le texte et l'image au centre */
-  justify-content: space-between; /* Espace le texte et l'image */
-  gap: 2rem; /* Crée un espace de 2rem entre le texte et l'image */
+  justify-content: space-between; /* Espace le texte et l'image au maximum */
+  gap: 4rem; /* Augmenté à 4rem pour bien séparer le texte de la grande image */
   margin-bottom: 2rem;
+  width: 100%; /* S'assure que le conteneur occupe toute la largeur disponible */
 }
 
 .profile-text {
-  flex: 1; /* Le texte prend tout l'espace disponible */
+  flex: 1; /* Le texte prend tout l'espace disponible à gauche */
 }
 
 .profile-img {
-  width: 500px; /* Ajustez la taille selon vos préférences */
+  width: 500px; /* Taille de l'image */
   height: 500px;
   border-radius: 50%; /* Rend l'image ronde */
   object-fit: cover; /* S'assure que l'image est bien recadrée */
-  border: 3px solid #0284c7; /* Optionnel: ajoute une bordure bleue */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel: ajoute une ombre */
+  border: 3px solid #0284c7; /* Bordure bleue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
   flex-shrink: 0; /* Empêche l'image de rétrécir */
+  margin-left: auto; /* Pousse l'image au maximum vers le bord droit */
 }
 
-/* Adaptation pour les écrans mobiles */
-@media (max-width: 600px) {
+/* Adaptation pour les écrans mobiles et tablettes */
+@media (max-width: 900px) { /* Passé à 900px car l'image de 500px nécessite plus d'espace */
   .profile-container {
-    flex-direction: column-reverse; /* Empile les éléments et remet l'image en haut sur mobile */
+    flex-direction: column-reverse; /* Empile les éléments et remet l'image en haut */
     text-align: center;
+    gap: 2rem;
+  }
+
+  .profile-img {
+    width: 280px; /* Réduction automatique sur petit écran pour éviter les dépassements */
+    height: 280px;
+    margin-left: 0;
   }
 }
