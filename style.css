@@ -127,8 +127,8 @@ h2 {
 }
 
 .profile-img {
-  width: 2000px; /* Ajustez la taille selon vos préférences */
-  height: 2000px;
+  width: 1000px; /* Ajustez la taille selon vos préférences */
+  height: 1000px;
   border-radius: 50%; /* Rend l'image ronde */
   object-fit: cover; /* S'assure que l'image est bien recadrée */
   border: 3px solid #0284c7; /* Optionnel: ajoute une bordure bleue */
