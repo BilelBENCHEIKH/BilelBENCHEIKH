@@ -127,8 +127,8 @@ h2 {
 }
 
 .profile-img {
-  width: 1000px; /* Ajustez la taille selon vos préférences */
-  height: 1000px;
+  width: 500px; /* Ajustez la taille selon vos préférences */
+  height: 500px;
   border-radius: 50%; /* Rend l'image ronde */
   object-fit: cover; /* S'assure que l'image est bien recadrée */
   border: 3px solid #0284c7; /* Optionnel: ajoute une bordure bleue */
@@ -137,7 +137,7 @@ h2 {
 }
 
 /* Adaptation pour les écrans mobiles */
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .profile-container {
     flex-direction: column-reverse; /* Empile les éléments et remet l'image en haut sur mobile */
     text-align: center;
