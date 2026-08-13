@@ -50,28 +50,93 @@ main {
 }
 
 /* 2. Ajuster le conteneur du profil */
+
+/* Conteneur principal */
 .profile-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-.profile-text {
-  flex: 1;
+/* Bloc contenant les images */
+.profile-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
 }
 
+/* Photo de profil */
 .profile-img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #0284c7;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-  margin-left: auto; /* Force l'image à se coller sur le bord droit */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0284c7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
 }
+
+/* Logo sous la photo */
+.secondary-img {
+    width: 260px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Texte */
+.profile-text {
+    flex: 1;
+}
+
+/* Titres */
+.profile-text h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.profile-text h2 {
+    margin-bottom: 15px;
+    color: #0284c7;
+}
+
+/* Paragraphes */
+.profile-text p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-text {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .secondary-img {
+        width: 200px;
+    }
+
+    .profile-text p {
+        text-align: center;
+    }
+}
+
 
 .tab-content {
   display: none;
