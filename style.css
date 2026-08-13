@@ -63,13 +63,12 @@ main {
 /* --- PROFILE SECTION (QUI JE SUIS) --- */
 .profile-container {
   display: flex;
-  align-items: flex-start; /* Aligne le haut de l'image et du texte */
+  align-items: flex-start;
   gap: 3rem;
   width: 100%;
   margin-bottom: 2rem;
 }
 
-/* Conteneur des images (si seconde image sous la photo) */
 .profile-images {
   display: flex;
   flex-direction: column;
@@ -88,7 +87,6 @@ main {
   flex-shrink: 0;
 }
 
-/* Image secondaire (logos/certifications sous la photo) */
 .secondary-img {
   width: 240px;
   height: auto;
@@ -101,17 +99,18 @@ main {
   flex: 1;
 }
 
-.profile-text h1 {
+/* TITRES EN NOIR (#0f172a) */
+h1, .profile-text h1 {
   margin-top: 0;
   margin-bottom: 0.8rem;
-  color: #0f172a;
+  color: #0f172a; /* Noir très élégant / Anthracite foncé */
   font-size: 1.8rem;
 }
 
-.profile-text h2 {
+h2, .profile-text h2 {
   margin-top: 1.8rem;
   margin-bottom: 0.8rem;
-  color: #0284c7;
+  color: #0f172a; /* Titres h2 repassés en noir */
   font-size: 1.4rem;
 }
 
@@ -133,11 +132,6 @@ main {
 }
 
 /* --- ONGLET EXPÉRIENCES & CARDS --- */
-h1 {
-  margin-bottom: 1.5rem;
-  color: #0f172a;
-}
-
 .card {
   background: #fff;
   padding: 1.5rem;
@@ -147,7 +141,7 @@ h1 {
 }
 
 .card h3 {
-  color: #0284c7;
+  color: #0f172a; /* Titres des cartes en noir également */
   margin-bottom: 0.3rem;
 }
 
@@ -177,7 +171,7 @@ h1 {
   text-decoration: underline;
 }
 
-/* --- RESPONSIVE (MOBILES & TABLETTES) --- */
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   main {
     padding: 1.5rem 1.5rem;
