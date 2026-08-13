@@ -163,8 +163,8 @@ p {
 
 /* Style du logo de l'entreprise */
 .company-logo {
-  max-width: 200px;
-  max-height: 85px;
+  max-width: 160px;
+  max-height: 65px;
   object-fit: contain;
 }
 
@@ -203,7 +203,7 @@ p {
   }
 
   .profile-text {
-    width: 100%;
+    width: 130%;
   }
 
   .profile-img {
