@@ -60,15 +60,37 @@ main {
   display: block;
 }
 
-/* --- PROFILE SECTION (QUI JE SUIS) --- */
+/* --- TYPOGRAPHIE GLOBALE --- */
+h1, .profile-text h1 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: #0f172a; /* Noir anthracite */
+  font-size: 1.8rem;
+}
+
+h2, .profile-text h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #0f172a; /* Titres h2 en noir */
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+/* --- SECTION QUI JE SUIS (PROFILE) --- */
 .profile-container {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* Aligne le haut des images avec le premier titre */
   gap: 3rem;
   width: 100%;
   margin-bottom: 2rem;
 }
 
+/* Colonne regroupant la photo et l'éventuelle image secondaire */
 .profile-images {
   display: flex;
   flex-direction: column;
@@ -76,7 +98,7 @@ main {
   flex-shrink: 0;
 }
 
-/* Photo de profil */
+/* Photo de profil principale */
 .profile-img {
   width: 280px;
   height: 280px;
@@ -87,40 +109,19 @@ main {
   flex-shrink: 0;
 }
 
+/* Logo ou illustration sous la photo */
 .secondary-img {
   width: 240px;
   height: auto;
   object-fit: contain;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
-/* Bloc texte principal */
+/* Colonne de texte */
 .profile-text {
   flex: 1;
 }
 
-/* TITRES EN NOIR (#0f172a) */
-h1, .profile-text h1 {
-  margin-top: 0;
-  margin-bottom: 0.8rem;
-  color: #0f172a; /* Noir très élégant / Anthracite foncé */
-  font-size: 1.8rem;
-}
-
-h2, .profile-text h2 {
-  margin-top: 1.8rem;
-  margin-bottom: 0.8rem;
-  color: #0f172a; /* Titres h2 repassés en noir */
-  font-size: 1.4rem;
-}
-
-.profile-text p {
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  color: #334155;
-}
-
-/* Puces sous Domaine d'expertise */
 .profile-text ul {
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
@@ -131,7 +132,7 @@ h2, .profile-text h2 {
   line-height: 1.6;
 }
 
-/* --- ONGLET EXPÉRIENCES & CARDS --- */
+/* --- SECTION EXPÉRIENCES & PROJETS --- */
 .card {
   background: #fff;
   padding: 1.5rem;
@@ -140,16 +141,31 @@ h2, .profile-text h2 {
   margin-bottom: 1.5rem;
 }
 
+/* En-tête de carte avec titre à gauche et logo d'entreprise à droite */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
 .card h3 {
-  color: #0f172a; /* Titres des cartes en noir également */
-  margin-bottom: 0.3rem;
+  color: #0f172a; /* Titres des expériences en noir */
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .card .date {
   font-size: 0.9rem;
   color: #64748b;
   display: block;
-  margin-bottom: 0.8rem;
+}
+
+/* Style du logo de l'entreprise */
+.company-logo {
+  max-width: 120px;
+  max-height: 45px;
+  object-fit: contain;
 }
 
 .card ul {
@@ -157,7 +173,11 @@ h2, .profile-text h2 {
   margin-top: 0.5rem;
 }
 
-/* --- ONGLET CONTACT --- */
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+/* --- SECTION CONTACT --- */
 .contact-info p {
   margin-bottom: 0.8rem;
 }
@@ -171,10 +191,10 @@ h2, .profile-text h2 {
   text-decoration: underline;
 }
 
-/* --- RESPONSIVE --- */
+/* --- ADAPTATION RESPONSIVE (MOBILES & TABLETTES) --- */
 @media (max-width: 768px) {
   main {
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 1.2rem;
   }
 
   .profile-container {
@@ -193,5 +213,15 @@ h2, .profile-text h2 {
 
   .secondary-img {
     width: 180px;
+  }
+
+  .card-header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .company-logo {
+    max-width: 100px;
   }
 }
