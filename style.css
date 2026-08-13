@@ -1,3 +1,4 @@
+/* --- RESET ET BASE --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* --- HEADER & NAVIGATION --- */
 header {
   background-color: #1e293b;
   color: #fff;
@@ -44,99 +46,11 @@ nav a:hover, nav a.active {
   border-bottom: 2px solid #38bdf8;
 }
 
+/* --- CONTENEUR PRINCIPAL --- */
 main {
-  max-width: 100%; /* Permet au contenu d'occuper toute la largeur de l'écran */
-  padding: 0 4rem;  /* Définit la marge globale gauche/droite par rapport à l'écran */
+  max-width: 100%;
+  padding: 2rem 4rem;
 }
-
-/* 2. Ajuster le conteneur du profil */
-
-/* Conteneur principal */
-.profile-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-/* Bloc contenant les images */
-.profile-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-/* Photo de profil */
-.profile-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #0284c7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    margin-bottom: 20px;
-}
-
-/* Logo sous la photo */
-.secondary-img {
-    width: 260px;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Texte */
-.profile-text {
-    flex: 1;
-}
-
-/* Titres */
-.profile-text h1 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #0f172a;
-}
-
-.profile-text h2 {
-    margin-bottom: 15px;
-    color: #0284c7;
-}
-
-/* Paragraphes */
-.profile-text p {
-    line-height: 1.7;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-text {
-        width: 100%;
-    }
-
-    .profile-img {
-        width: 220px;
-        height: 220px;
-    }
-
-    .secondary-img {
-        width: 200px;
-    }
-
-    .profile-text p {
-        text-align: center;
-    }
-}
-
 
 .tab-content {
   display: none;
@@ -146,38 +60,102 @@ main {
   display: block;
 }
 
-h1 {
-  margin-bottom: 1rem;
+/* --- PROFILE SECTION (QUI JE SUIS) --- */
+.profile-container {
+  display: flex;
+  align-items: flex-start; /* Aligne le haut de l'image et du texte */
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Conteneur des images (si seconde image sous la photo) */
+.profile-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Photo de profil */
+.profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0284c7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+/* Image secondaire (logos/certifications sous la photo) */
+.secondary-img {
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+/* Bloc texte principal */
+.profile-text {
+  flex: 1;
+}
+
+.profile-text h1 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
   color: #0f172a;
+  font-size: 1.8rem;
 }
 
-h2 {
-  margin: 1.5rem 0 0.5rem 0;
-  color: #1e293b;
+.profile-text h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #0284c7;
+  font-size: 1.4rem;
 }
 
-.skills-list {
+.profile-text p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+/* Puces sous Domaine d'expertise */
+.profile-text ul {
   margin-left: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-text li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* --- ONGLET EXPÉRIENCES & CARDS --- */
+h1 {
+  margin-bottom: 1.5rem;
+  color: #0f172a;
 }
 
 .card {
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
 }
 
 .card h3 {
   color: #0284c7;
+  margin-bottom: 0.3rem;
 }
 
 .card .date {
   font-size: 0.9rem;
   color: #64748b;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .card ul {
@@ -185,6 +163,7 @@ h2 {
   margin-top: 0.5rem;
 }
 
+/* --- ONGLET CONTACT --- */
 .contact-info p {
   margin-bottom: 0.8rem;
 }
@@ -198,49 +177,27 @@ h2 {
   text-decoration: underline;
 }
 
-CSS
-/* Layout pour le conteneur du profil */
-.profile-container {
-  display: flex;
-  align-items: center; /* Aligne le milieu du texte avec le milieu de l'image */
-  justify-content: flex-start;
-  gap: 3rem;
-  margin-bottom: 1.5rem;
-  width: 100%;
-}
-
-.profile-img {
-  width: 300px; /* Taille ajustée */
-  height: 300px;
-  border-radius: 50%; /* Rend l'image ronde */
-  object-fit: cover; /* S'assure que l'image est bien recadrée */
-  border: 3px solid #0284c7; /* Bordure bleue */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-  flex-shrink: 0; /* Empêche l'image de rétrécir */
-  margin-right: 0; /* Supprime le décalage forcé à droite */
-}
-
-.profile-text {
-  flex: 1; /* Le texte prend tout l'espace disponible à droite de l'image */
-}
-
-/* Ajustement des titres pour resserrer les espaces verticaux */
-h1, h2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Adaptation pour les écrans mobiles et tablettes */
+/* --- RESPONSIVE (MOBILES & TABLETTES) --- */
 @media (max-width: 768px) {
+  main {
+    padding: 1.5rem 1.5rem;
+  }
+
   .profile-container {
-    flex-direction: column; /* Empile les éléments (l'image reste au-dessus) sur mobile */
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 1.5rem;
+  }
+
+  .profile-text {
+    width: 100%;
   }
 
   .profile-img {
-    width: 220px; /* Taille adaptée pour mobile */
+    width: 220px;
     height: 220px;
+  }
+
+  .secondary-img {
+    width: 180px;
   }
 }
