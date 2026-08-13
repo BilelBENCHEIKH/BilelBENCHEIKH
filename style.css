@@ -201,12 +201,12 @@ h2 {
 CSS
 /* Layout pour le conteneur du profil */
 .profile-container {
-  display: flex; /* Active flexbox pour aligner les éléments sur la même ligne */
-  align-items: flex-start; /* Aligne le haut du texte avec le haut de l'image pour éviter les vides */
-  justify-content: flex-start; /* Aligne les éléments à partir de la gauche */
-  gap: 3rem; /* Espacement équilibré entre la photo et le texte */
-  margin-bottom: 1.5rem; /* Réduit la marge basse pour faire remonter la suite de la page */
-  width: 100%; /* S'assure que le conteneur occupe toute la largeur disponible */
+  display: flex;
+  align-items: center; /* Aligne le milieu du texte avec le milieu de l'image */
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .profile-img {
