@@ -177,6 +177,76 @@ p {
   margin-bottom: 0.4rem;
 }
 
+/* --- SECTION CERTIFICATIONS & FORMATIONS --- */
+.certifications-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cert-badge {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.cert-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cert-info {
+  flex: 1;
+}
+
+.cert-info h3 {
+  color: #0f172a;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.cert-issuer {
+  display: inline-block;
+  font-weight: 600;
+  color: #0284c7;
+  font-size: 0.95rem;
+  margin-right: 0.8rem;
+}
+
+.cert-info .date {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.cert-info p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
 /* --- LOGOS TECHNOLOGIES (BAS DE PAGE) --- */
 .tech-logos-card {
   margin-top: 2rem;
@@ -261,6 +331,17 @@ p {
 
   .company-logo {
     max-width: 100px;
+  }
+
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cert-badge {
+    width: 75px;
+    height: 75px;
   }
 
   .tech-logos-grid {
